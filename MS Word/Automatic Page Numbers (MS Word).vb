@@ -5,7 +5,6 @@ Sub AddPageNumbers()
          PageNumberAlignment:=wdAlignPageNumberCenter, _
          FirstPage:=True
     End With
-
 End Sub
 
 
