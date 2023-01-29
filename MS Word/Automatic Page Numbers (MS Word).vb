@@ -11,9 +11,21 @@ End Sub
 
 
 Sub RemovePageNumbers()
-    'Open AI ChatGPT Jan 9 Version
+    'Open AI ChatGPT Jan 9 Version. Free Research Preview (20230129)
     Dim sec As Section
     For Each sec In ActiveDocument.Sections
         sec.Footers(wdHeaderFooterPrimary).Range.Delete
+    Next sec
+End Sub
+
+
+
+
+Sub AddPageNumbers2()
+    'Open AI ChatGPT Jan 9 Version. Free Research Preview (20230129)
+    Dim sec As Section
+    For Each sec In ActiveDocument.Sections
+        sec.Footers(wdHeaderFooterPrimary).PageNumbers.add PageNumberAlignment:= _
+            wdAlignPageNumberCenter, FirstPage:=True
     Next sec
 End Sub
