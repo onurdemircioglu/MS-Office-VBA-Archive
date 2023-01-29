@@ -1,2 +1,2 @@
 # vba-archive
-MS Excel VBA Codes, use cases
+MS Office VBA Codes, use cases
